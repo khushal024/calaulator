@@ -1,0 +1,66 @@
+@import "bootstrap/dist/css/bootstrap.min.css"; 
+
+:root{
+--background: #fff;
+--text-primary:#000;
+--text-secondary:Blue;
+--accent:purple;
+}
+[data-theme ='gold']{
+--background:gold;
+--text-primary:#fff;
+--text-secondary:#000;
+--accent:#7B3F00;  
+}
+[data-theme='dark']{
+--background:#000; 
+--text-primary:#fff;
+--text-secondary:gold; 
+--accent:grey; 
+} 
+.App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  transition: all .5s;
+}
+.App > button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
+  transition: all .5s; 
+}   
+body{
+  font-family: sans-serif;
+}
+.calculator-main{
+  .container{
+    max-width:550px;
+  }
+  .calc-body{
+    min-height:300px;
+  }
+  .calc-display{
+    min-height: 100px;
+    padding: 10px;
+    text-align: right;
+    font-size: 25px; 
+  }
+  .calcall-btns  {
+      .calcallnumb-btns {
+           button{
+              width: 33.33%;
+              padding: 16px;
+                }
+      
+      
+    .calc-opretors{
+             button{
+              width: 100%;
+              padding: 15px 0;
+                }
+        }
+    }
+  }
+}
